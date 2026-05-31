@@ -96,7 +96,7 @@
 }
 @media screen and (min-width: 1158px) {
   .team .container {
-    padding: 96px 16px;
+    padding: 120px 15px;
   }
   .team-list {
     flex-wrap: nowrap;

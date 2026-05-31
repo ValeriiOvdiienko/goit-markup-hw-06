@@ -54,6 +54,14 @@
   .features .container {
     padding: 120px 15px;
   }
+  .header-3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  .features-text {
+    font-weight: 400;
+  }
   .features-list {
     flex-wrap: nowrap;
     row-gap: 0;

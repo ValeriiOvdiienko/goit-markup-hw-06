@@ -1,14 +1,12 @@
-/* .footer {
+.footer {
   background-color: #2e2f42;
-  padding: 96px 16 px;
-} */
+}
 .footer .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 72px;
-  background-color: #2e2f42;
   padding: 96px 16px;
 }
 .footer .logo {
@@ -109,7 +107,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: 16px;
 }
 input::placeholder {
   color: #ffffff;
@@ -161,8 +159,17 @@ input.user-mail-sbscrb:focus {
   fill: #ffffff;
 }
 @media screen and (min-width: 768px) {
+  .footer .logo {
+    text-align: start;
+  }
+  .footer-socials p {
+    text-align: start;
+  }
   .footer .container {
+    justify-content: flex-start;
+    align-items: flex-start;
     padding: 96px 0;
+    max-width: 552px;
     margin: 0 auto;
     flex-direction: row;
     flex-wrap: wrap;
@@ -175,15 +182,23 @@ input.user-mail-sbscrb:focus {
   }
   .subscribe-form {
     flex-direction: row;
+    gap: 24px;
+  }
+  input.user-mail-sbscrb {
+    min-width: 264px;
   }
 }
 @media screen and (min-width: 1158px) {
   .footer .container {
     padding: 100px 15px;
-    justify-content: space-between;
+    min-width: 1158px;
+    flex-wrap: nowrap;
+    gap: 0;
+    justify-content: flex-start;
     align-items: flex-start;
   }
-  .footer .logo {
-    text-align: start;
+  .footer-socials {
+    padding-left: 120px;
+    margin-right: auto;
   }
 }

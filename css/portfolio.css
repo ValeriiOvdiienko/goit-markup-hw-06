@@ -43,9 +43,15 @@
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
-.portfolio-img {
+.portfolio-pictures {
   position: relative;
   overflow: hidden;
+}
+.portfolio-img {
+  min-width: 288px;
+  max-width: 360px;
+  min-height: 239px;
+  max-height: 300px;
 }
 .portfolio-overlay {
   position: absolute;

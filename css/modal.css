@@ -84,8 +84,8 @@
   justify-content: center;
   padding-top: 136px;
   padding-bottom: 24px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 16px;
+  padding-right: 16 px;
 }
 .form-label {
   display: flex;
@@ -245,5 +245,9 @@ input:focus-within + .input-icon {
   .form-header {
     min-width: 360px;
     min-height: 24px;
+  }
+  .call-back-form {
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }

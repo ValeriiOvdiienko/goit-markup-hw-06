@@ -325,13 +325,13 @@
           <h2 class="header-2">Our Portfolio</h2>
           <ul class="portfolio-list">
             <li class="portfolio-item">
-              <div class="portfolio-img">
+              <div class="portfolio-pictures">
                 <picture>
                   <source
                     media="(min-width:1158px)"
                     srcset="
                       ./images/portfolio-img/banking-d.jpg    1x,
-                      ./images/portfolio-img/banking-d@2x.jpg
+                      ./images/portfolio-img/banking-d@2x.jpg 2x
                     "
                   />
                   <source
@@ -349,16 +349,9 @@
                     "
                   />
                   <img
+                    class="portfolio-img"
                     src="./images/portfolio-img/banking.jpg"
                     alt="Banking App"
-                    min-width:
-                    288px;
-                    max-width:
-                    360px;
-                    min-height:
-                    239px;
-                    max-height:
-                    300px;
                   />
                 </picture>
                 <div class="portfolio-overlay">
@@ -375,20 +368,20 @@
               </div>
             </li>
             <li class="portfolio-item">
-              <div class="portfolio-img">
+              <div class="portfolio-pictures">
                 <picture>
                   <source
                     media="(min-width:1158px)"
                     srcset="
                       ./images/portfolio-img/payment-d.jpg    1x,
-                      ./images/portfolio-img/payment-d@2x.jpg
+                      ./images/portfolio-img/payment-d@2x.jpg 2x
                     "
                   />
                   <source
                     media="(min-width:768px)"
                     srcset="
                       ./images/portfolio-img/banking-t.jpg    1x,
-                      ./images/portfolio-img/banking-t@2x.jpg
+                      ./images/portfolio-img/banking-t@2x.jpg 2x
                     "
                   />
                   <source
@@ -399,16 +392,9 @@
                     "
                   />
                   <img
+                    class="portfolio-img"
                     src="./images/portfolio-img/banking.jpg"
                     alt="Cashless Payment"
-                    min-width:
-                    288px;
-                    max-width:
-                    360px;
-                    min-height:
-                    239px;
-                    max-height:
-                    300px;
                   />
                 </picture>
                 <div class="portfolio-overlay">
@@ -425,13 +411,13 @@
               </div>
             </li>
             <li class="portfolio-item">
-              <div class="portfolio-img">
+              <div class="portfolio-pictures">
                 <picture>
                   <source
                     media="(min-width:1158px)"
                     srcset="
                       ./images/portfolio-img/media-d.jpg    1x,
-                      ./images/portfolio-img/media-d@2x.jpg
+                      ./images/portfolio-img/media-d@2x.jpg 2x
                     "
                   />
                   <source
@@ -449,16 +435,9 @@
                     "
                   />
                   <img
+                    class="portfolio-img"
                     src="./images/portfolio-img/media.jpg"
                     alt="Meditation App"
-                    min-width:
-                    288px;
-                    max-width:
-                    360px;
-                    min-height:
-                    239px;
-                    max-height:
-                    300px;
                   />
                 </picture>
                 <div class="portfolio-overlay">
@@ -475,13 +454,13 @@
               </div>
             </li>
             <li class="portfolio-item">
-              <div class="portfolio-img">
+              <div class="portfolio-pictures">
                 <picture>
                   <source
                     media="(min-width:1158px)"
                     srcset="
                       ./images/portfolio-img/taxi-d.jpg    1x,
-                      ./images/portfolio-img/taxi-d@2x.jpg
+                      ./images/portfolio-img/taxi-d@2x.jpg 2x
                     "
                   />
                   <source
@@ -499,16 +478,9 @@
                     "
                   />
                   <img
+                    class="portfolio-img"
                     src="./images/portfolio-img/taxi.jpg"
                     alt="Taxi Service"
-                    min-width:
-                    288px;
-                    max-width:
-                    360px;
-                    min-height:
-                    239px;
-                    max-height:
-                    300px;
                   />
                 </picture>
                 <div class="portfolio-overlay">
@@ -525,13 +497,13 @@
               </div>
             </li>
             <li class="portfolio-item">
-              <div class="portfolio-img">
+              <div class="portfolio-pictures">
                 <picture>
                   <source
                     media="(min-width:1158px)"
                     srcset="
                       ./images/portfolio-img/screen-d.jpg    1x,
-                      ./images/portfolio-img/screen-d@2x.jpg
+                      ./images/portfolio-img/screen-d@2x.jpg 2x
                     "
                   />
                   <source
@@ -549,16 +521,9 @@
                     "
                   />
                   <img
+                    class="portfolio-img"
                     src="./images/portfolio-img/screen.jpg"
                     alt="Screen Illustrations"
-                    min-width:
-                    288px;
-                    max-width:
-                    360px;
-                    min-height:
-                    239px;
-                    max-height:
-                    300px;
                   />
                 </picture>
                 <!-- <img
@@ -580,13 +545,13 @@
               </div>
             </li>
             <li class="portfolio-item">
-              <div class="portfolio-img">
+              <div class="portfolio-pictures">
                 <picture>
                   <source
                     media="(min-width:1158px)"
                     srcset="
                       ./images/portfolio-img/courses-d.jpg    1x,
-                      ./images/portfolio-img/courses-d@2x.jpg
+                      ./images/portfolio-img/courses-d@2x.jpg 2x
                     "
                   />
                   <source
@@ -604,16 +569,9 @@
                     "
                   />
                   <img
+                    class="portfolio-img"
                     src="./images/portfolio-img/courses.jpg"
                     alt="Online Courses"
-                    min-width:
-                    288px;
-                    max-width:
-                    360px;
-                    min-height:
-                    239px;
-                    max-height:
-                    300px;
                   />
                 </picture>
                 <div class="portfolio-overlay">
@@ -770,7 +728,7 @@
     </div>
     <!--#endregion modal-->
     <!--#region mob-menu-->
-    <div class="mobile-menu is-open">
+    <div id="mobile-menu" class="mobile-menu">
       <button type="button" class="mob-close-button">
         <svg width="8" height="8" class="icon-close">
           <use href="./images/icons.svg#icon-close" />
