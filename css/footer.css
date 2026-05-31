@@ -1,10 +1,19 @@
-.footer {
+/* .footer {
   background-color: #2e2f42;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
+  padding: 96px 16 px;
+} */
 .footer .container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 72px;
+  background-color: #2e2f42;
+  padding: 96px 16px;
+}
+.footer .logo {
+  padding: 0;
+  text-align: center;
 }
 .footer-logo-text {
   display: flex;
@@ -38,12 +47,15 @@
 .footer-socials {
   display: flex;
   flex-direction: column;
-  padding-left: 120px;
+  /* padding-left: 120px; */
   color: #ffffff;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+.footer-socials p {
+  text-align: center;
 }
 .footer-social-list {
   display: flex;
@@ -77,21 +89,24 @@
 .subscribe {
   display: flex;
   flex-direction: column;
-  min-width: 453px;
-  height: 80px;
+  align-items: center;
+  justify-content: center;
+  min-width: 288px;
+  /* height: 80px; */
   color: #ffffff;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   gap: 16px;
-  margin-left: 83px;
+  /* margin-left: 83px; */
 }
 .subs-form-wraper {
   display: flex;
 }
 .subscribe-form {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 24px;
@@ -104,7 +119,7 @@ input.user-mail-sbscrb {
   padding-bottom: 13px;
   padding-left: 16px;
   height: 40px;
-  width: 264px;
+  min-width: 288px;
   outline: none;
   border: 1px solid #ffffff;
   border-radius: 4px;
@@ -144,4 +159,31 @@ input.user-mail-sbscrb:focus {
 }
 .subscribe-svg {
   fill: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .footer .container {
+    padding: 96px 0;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .subscribe {
+    min-width: 453px;
+    align-items: flex-start;
+  }
+  .subscribe-form {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .footer .container {
+    padding: 100px 15px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .footer .logo {
+    text-align: start;
+  }
 }

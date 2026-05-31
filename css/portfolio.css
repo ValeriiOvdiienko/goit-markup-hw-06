@@ -1,13 +1,12 @@
-.portfolio {
-  padding-top: 120px;
-  padding-bottom: 120px;
+.portfolio .container {
+  padding: 96px 16px;
 }
 
 .portfolio .header-2 {
   color: #2e2f42;
   font-size: 36px;
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   padding-bottom: 72px;
@@ -23,14 +22,14 @@
 
 .portfolio-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   row-gap: 48px;
-  column-gap: 24px;
+  /* column-gap: 24px; */
 }
 .portfolio-item {
   display: flex;
   flex-direction: column;
-  flex-basis: calc((100% - 48px) / 3);
+  min-width: 288px;
   box-shadow: none;
   transition-property: box-shadow;
   transition-duration: 250ms;
@@ -78,4 +77,26 @@
   padding-right: 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+  .portfolio-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+}
+@media screen and (min-width: 1158px) {
+  .portfolio .container {
+    padding: 120px 15px;
+  }
+  .portfolio-list {
+    row-gap: 48px;
+  }
+  .portfolio-item {
+    flex-basis: calc((100% - 48px) / 3);
+  }
 }
