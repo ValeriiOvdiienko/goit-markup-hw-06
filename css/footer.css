@@ -198,7 +198,7 @@ input.user-mail-sbscrb:focus {
     align-items: flex-start;
   }
   .footer-socials {
-    padding-left: 120px;
+    margin-left: 120px;
     margin-right: auto;
   }
 }

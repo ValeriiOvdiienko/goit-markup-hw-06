@@ -84,14 +84,14 @@
 @media screen and (min-width: 768px) {
   .team-list {
     flex-direction: row;
-    .team-item {
-      width: calc((100% - 24px) / 2);
-    }
-    /* align-items: center;
-      justify-content: center; */
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 64px;
+  }
+  .team-item {
+    width: calc((100% - 24px) / 2);
   }
 }
 @media screen and (min-width: 1158px) {
