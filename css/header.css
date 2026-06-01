@@ -8,8 +8,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-width: 320px;
-  padding: 0 16px;
   /* flex-grow: 0; */
 }
 .logo {
@@ -114,15 +112,14 @@
       0 2px 1px 0 rgba(46, 47, 66, 0.08);
   }
   .header .container {
-    min-width: 768px;
-    justify-content: center;
+    max-width: 768px;
+    justify-content: space-between;
   }
   .logo {
-    padding: 0;
+    margin-right: 120px;
   }
   .navigation {
     display: flex;
-    padding-left: 120px;
     margin-right: auto;
   }
   .nav-list {
@@ -190,12 +187,13 @@
 }
 @media screen and (min-width: 1158px) {
   .header .container {
-    min-width: 1158px;
+    max-width: 1158px;
     flex-grow: 0;
-    padding: 0 15px;
+  }
+  .logo {
+    margin-right: 76px;
   }
   .navigation {
-    padding-left: 76px;
     flex-grow: 2;
   }
   .address {
